@@ -14,6 +14,6 @@ FROM scratch
 
 COPY --from=builder /app /bin/app
 
-COPY tracker.db /
+COPY tracker.db ./
 
 ENTRYPOINT ["/bin/app"]
